@@ -15,6 +15,7 @@ from google.oauth2 import service_account
 
 credentials_file = st.secrets.connection.gcs # 외부 배포시 꼭, 환경변수로 만들어서 배포
 bucket_name = st.secrets['my_bucket'] # 버킷이름
+st.write(st.secrets.connection.gcs)
 button=st.button('load')
 if button:
     with st.spinner('loading..'):
