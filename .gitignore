@@ -152,6 +152,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+my_cred='C:/streamlit/phrasal-indexer-393802-bfefa4c104fc.json'
+my_bucket='csac_final_v2'
+
 [connection.gcs]
 type="service_account"
 project_id="phrasal-indexer-393802"
@@ -164,7 +167,6 @@ token_uri="https://oauth2.googleapis.com/token"
 auth_provider_x509_cert_url="https://www.googleapis.com/oauth2/v1/certs"
 client_x509_cert_url="https://www.googleapis.com/robot/v1/metadata/x509/csac-service-account%40phrasal-indexer-393802.iam.gserviceaccount.com"
 universe_domain="googleapis.com"
-
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
