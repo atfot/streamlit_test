@@ -23,7 +23,7 @@ if button:
         #cd = service_account.Credentials.from_service_account_info(credentials_file) 
         #client = storage.Client(credentials=cd)
 
-        with h5py.File("gs://csac_final_v2/new/model_resnetrs50_lion_dense10240.h5", "r") as f:
+        with h5py.File("https://storage.googleapis.com/csac_final_v2/new/model_resnetrs50_lion_dense10240.h5", "r") as f:
             models=f
         
         #bucket = client.bucket(bucket_name)
