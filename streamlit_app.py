@@ -15,10 +15,10 @@ from google.oauth2 import service_account
 
 credentials_file = st.secrets['my_cred'] # 외부 배포시 꼭, 환경변수로 만들어서 배포
 bucket_name = st.secrets['my_bucket'] # 버킷이름
-
+button=st.button('load')
 @st.cache_data # 데이터를 한번만 불러오도록 캐싱 ★★★
 def load_data():
-    if st.button('load'):
+    if button:
         with st.spinner('loading..'):
             	# 서비스키 인증 , Google Cloud Storage용 클라이언트 객체를 생성합니다.
                 cd = service_account.Credentials.from_service_account_file(credentials_file) 
