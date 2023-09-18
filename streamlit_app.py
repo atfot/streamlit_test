@@ -13,7 +13,7 @@ from google.cloud import storage
 from google.oauth2 import service_account
 
 
-credentials_file = st.secrets['my_cred'] # 외부 배포시 꼭, 환경변수로 만들어서 배포
+credentials_file = **st.secrets.connection.gcs # 외부 배포시 꼭, 환경변수로 만들어서 배포
 bucket_name = st.secrets['my_bucket'] # 버킷이름
 button=st.button('load')
 if button:
