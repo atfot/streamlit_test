@@ -1,5 +1,5 @@
 # requirements.txt
-gcsfs==x.x.x
+gcsfs
 # Direct pypi install coming soon
 git+https://github.com/streamlit/files-connection
 streamlit
