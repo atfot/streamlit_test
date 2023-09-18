@@ -32,7 +32,7 @@ if button:
         models = []
         for blob in h5_blobs:
             h5_data = blob.download_as_string()    
-            model = load_model(io.StringIO(h5_data.decode('utf-8')))    
+            model = load_model(io.StringIO(h5_data))    
             models.append(model)    
      
         models=models[0]
@@ -41,3 +41,4 @@ if button:
         else:
             result='loading failed'
         st.write(result)
+# .decode('utf-8')
