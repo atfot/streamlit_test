@@ -20,3 +20,4 @@ if button:
         else:
             result='loading failed'
         st.write(result)
+        st.write(type(models))
