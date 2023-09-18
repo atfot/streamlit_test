@@ -14,7 +14,7 @@ if button:
         st.title('')
         st.divider()
         conn = st.experimental_connection('gcs', type=FilesConnection)
-        models = conn.read("gs://csac_final_v2/new/model_resnetrs50_lion_dense10240.h5",input_format='None')
+        models = conn.open("gs://csac_final_v2/new/model_resnetrs50_lion_dense10240.h5",mode='rb')
         if models:
             result='loading complete'
         else:
