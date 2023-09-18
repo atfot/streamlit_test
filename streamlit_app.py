@@ -32,7 +32,7 @@ if button:
         models = []
         for blob in h5_blobs:
             h5_data = blob.download_as_string()    
-            model = load_model(io.StringIO(h5_data))    
+            model = load_model(io.BytesIO(h5_data))    
             models.append(model)    
      
         models=models[0]
