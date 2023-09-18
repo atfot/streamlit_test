@@ -43,11 +43,11 @@ def load_data():
              
                 models=models[0]
                 if models:
-                    st.write('loading complete')
+                    result='loading complete'
                 else:
-                    st.write('loading failed')
+                    result='loading failed'
             
-                return models
+                return st.write(result)
 data = load_data()
 """
 
